@@ -184,21 +184,21 @@ Lua API summary:
         <th>Details</th>
     </tr>
     <tr>
-        <td>`main.application` instance</td>
-        <td>is a hub for subsystems, e.g., `camera`</td>
+        <td><pre>main.application</pre> instance</td>
+        <td>is a hub for subsystems, e.g., <pre>camera</pre></td>
         <td> - </td>
     </tr>
     <tr>
-        <td>`main.application.camera` instance</td>
-        <td>is a viewport into application's scene</td>
+        <td><strong>main.application.camera</strong> instance</td>
+        <td>is a viewport into <strong>application</strong>'s scene</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>`main.application.camera.clearColor` property</td>
-        <td>is a clearing color (effectively background color) of the camera</td>
+        <td><strong>main.application.camera.clearColor</strong> property</td>
+        <td>is a clearing color (effectively background color) of the <strong>camera</strong></td>
         <td><ul>
             <li>
-**accepts** color in RGB format
+<strong>accepts</strong> color in RGB format
 ```lua
 main.application.camera.clearColor = {1, 0, 0}
 ```
@@ -231,12 +231,9 @@ print("background color:", color[1], color[2], color[3])
 |
 
 
-* `main.application` instance
-    * is a hub for subsystems, e.g., `camera`
-* `main.application.camera` instance
-    * is a viewport into application's scene
-* `main.application.camera.clearColor` property
-    * is clearing color of the camera, effectively the background color
+* `main.application` instance is a hub for subsystems, e.g., `camera`
+* `main.application.camera` instance is a viewport into `application`'s scene
+* `main.application.camera.clearColor` property is a clearing color (effectively background color) of the `camera`
     * **accepts** color in RGB format
         ```lua
         main.application.camera.clearColor = {1, 0, 0}
