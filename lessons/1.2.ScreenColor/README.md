@@ -175,94 +175,21 @@ You have successfully:
 * set screen color with `main.application.camera.clearColor`
 * found out about web browser cache that may drive you crazy if you forget about it
 
-Lua API summary:
+## Lua API summary
 
-<table>
-    <tr>
-        <th>Entity</th>
-        <th>Description</th>
-        <th>Details</th>
-    </tr>
-    <tr>
-        <td><pre>main.application</pre> instance</td>
-        <td>is a hub for subsystems, e.g., <pre>camera</pre></td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td><strong>main.application.camera</strong> instance</td>
-        <td>is a viewport into <strong>application</strong>'s scene</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td><strong>main.application.camera.clearColor</strong> property</td>
-        <td>is a clearing color (effectively background color) of the <strong>camera</strong></td>
-        <td><ul>
-            <li>
-<strong>accepts</strong> color in RGB format
-```lua
-main.application.camera.clearColor = {1, 0, 0}
-```
-            </li>
-            <li>
-**returns** color in RGB format
-```lua
-local color = main.application.camera.clearColor
-print("background color:", color[1], color[2], color[3])
-  ```
-            </li>
-        </ul></td>
-    </tr>
-</table>
-
-| Entity | Description | Details |
-|-|-|-|
-| `main.application` instance | is a hub for subsystems, e.g., `camera` | - |
-| `main.application.camera` instance | is a viewport into application's scene | - |
-| `main.application.camera.clearColor` property | is a clearing color (effectively background color) of the camera | **accepts** color in RGB format
-```lua
-main.application.camera.clearColor = {1, 0, 0}
-```
-<br>
-**returns** color in RGB format
-```lua
-local color = main.application.camera.clearColor
-print("background color:", color[1], color[2], color[3])
-```
-|
-
-
-* `main.application` instance is a hub for subsystems, e.g., `camera`
+* `main` namespace hosts `application` instance
+* `main.application` instance hosts subsystems like `camera`
 * `main.application.camera` instance is a viewport into `application`'s scene
 * `main.application.camera.clearColor` property is a clearing color (effectively background color) of the `camera`
-    * **accepts** color in RGB format
+    * **accepts** array of color components in RGB format
         ```lua
         main.application.camera.clearColor = {1, 0, 0}
         ```
-    * **returns** color in RGB format
+    * **returns** array of color components in RGB format
         ```lua
         local color = main.application.camera.clearColor
         print("background color:", color[1], color[2], color[3])
         ```
-            
-
-
-| Namespace | Entity | Class / Instance / Property | Description | Input | Output | Example |
-|-|-|-|-|-|-|-|
-| `main` | `application` | Instance | Is a hub for subsystems, e.g., `camera` | - | - | - |
-| `main` | `application.camera` | Instance | Is a viewport into application's scene | - | - | - |
-| `main` | `application.camera.clearColor` | Property | Clearing color of the camera, effectively the background color | Color in RGB format | Color in RGB format | `main.application.camera.clearColor = {1, 0, 0} -- Set red background color`<br>`local color = main.application.camera.clearColor -- Get background color` |
-
-
-* `main` is a so-called namespace where `application` instance resides
-    * `Lua` does not have a notion of namespaces, however, they are easily simulated by tables
-* `application` is application's instance
-    * hosts subsystems like resources, scene nodes, etc.
-* `camera` is the main camera used by application
-    * is a viewport into a scene
-* `clearColor` is the property of `camera` to set so-called `clearing color`
-    * accepts color in RGB
-* `{0, 1, 0}` is an RGB representation of green color
-    * is represented by `Lua` array
 
 | < Back | Course | Next > |
 |-|-|-|
