@@ -33,3 +33,11 @@ for lesson in $LESSONS; do
     generateREADME $lesson
 done
 
+# Generate main README.
+echo "Generating main README"
+
+featuresDir=$DIR/api
+srcDir=$DIR/src
+featuresFile=$DIR/$FEATURES_FILENAME
+echo "feature-tool $featuresFile $srcDir $featuresDir --exclude-variant-ornament"
+feature-tool $featuresFile $srcDir $featuresDir --exclude-variant-ornament
