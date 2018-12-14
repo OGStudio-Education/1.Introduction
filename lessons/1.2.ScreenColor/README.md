@@ -116,16 +116,9 @@ This means the script has been loaded, parsed, and executed successfully.
 
 Let's see into API you used in `index.lua`:
 
-// main Start
 * `main` namespace hosts `application` instance
-// main End
-// main.application Start
 * `main.application` instance hosts subsystems like `camera`
-// main.application End
-// main.application.camera Start
 * `main.application.camera` instance is a viewport into application's scene
-// main.application.camera End
-// main.application.camera.clearColor Start
 * `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
     * **accepts** array of color components in RGB format
         ```lua
@@ -136,7 +129,6 @@ Let's see into API you used in `index.lua`:
         local color = main.application.camera.clearColor
         print("background color:", color[1], color[2], color[3])
         ```
-// main.application.camera.clearColor End
 
 Now let's try to set red color instead of the green one:
 
@@ -187,16 +179,9 @@ You have successfully:
 
 Here's API you used:
 
-// main Start
 * `main` namespace hosts `application` instance
-// main End
-// main.application Start
 * `main.application` instance hosts subsystems like `camera`
-// main.application End
-// main.application.camera Start
 * `main.application.camera` instance is a viewport into application's scene
-// main.application.camera End
-// main.application.camera.clearColor Start
 * `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
     * **accepts** array of color components in RGB format
         ```lua
@@ -207,7 +192,6 @@ Here's API you used:
         local color = main.application.camera.clearColor
         print("background color:", color[1], color[2], color[3])
         ```
-// main.application.camera.clearColor End
 
 | < Back | Course | Next > |
 |-|-|-|

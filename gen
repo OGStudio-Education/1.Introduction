@@ -25,8 +25,8 @@ generateREADME()
     featuresDir=$DIR/api
     srcDir=$DIR/lessons/$lesson/src
     featuresFile=$DIR/lessons/$lesson/$FEATURES_FILENAME
-    echo "feature-tool $featuresFile $srcDir $featuresDir --comment-string=//"
-    feature-tool $featuresFile $srcDir $featuresDir --comment-string=//
+    echo "feature-tool $featuresFile $srcDir $featuresDir --exclude-variant-ornament"
+    feature-tool $featuresFile $srcDir $featuresDir --exclude-variant-ornament
 }
 
 for lesson in $LESSONS; do
