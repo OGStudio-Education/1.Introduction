@@ -177,6 +177,27 @@ You have successfully:
 
 Lua API summary:
 
+* **Namespace**: `main`
+    * **Entity**: `application`
+        * is instance
+        * is a hub for subsystems, e.g., `camera`
+    * **Entity**: `application.camera`
+        * is instance
+        * is a viewport into application's scene
+    * **Entity**: `application.camera.clearColor`
+        * is property
+        * is clearing color of the camera, effectively the background color
+        * **accepts** color in RGB format
+            ```lua
+            main.application.camera.clearColor = {1, 0, 0}
+            ```
+        * **returns** color in RGB format
+            ```lua
+            local color = main.application.camera.clearColor
+            ```
+            
+
+
 | Namespace | Entity | Class / Instance / Property | Description | Input | Output | Example |
 |-|-|-|-|-|-|-|
 | `main` | `application` | Instance | Is a hub for subsystems, e.g., `camera` | - | - | - |
