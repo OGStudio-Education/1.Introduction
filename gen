@@ -26,10 +26,10 @@ generateREADME()
     srcDir=$DIR/lessons/$lesson/src
     featuresFile=$DIR/lessons/$lesson/$FEATURES_FILENAME
     echo "feature-tool $featuresFile $srcDir $featuresDir --comment-string=//"
-    #feature-tool $featuresFile $srcDir $featuresDir --comment-string=--
+    feature-tool $featuresFile $srcDir $featuresDir --comment-string=//
 }
 
 for lesson in $LESSONS; do
-    generateREADME lesson
+    generateREADME $lesson
 done
 
