@@ -3,7 +3,7 @@
 
 | < Back | Course | Next > |
 |-|-|-|
-| [1.3. Local development][1.3.LocalDev] | [1. Introduction][course] | TODO |
+| [1.3. Local development][1.3.LocalDev] | [1. Introduction][course] | [1.5. Scene node][1.5.SceneNode] |
 
 # 1.4. Mouse
 
@@ -158,12 +158,13 @@ Here's final [index.lua][index.lua] you should have created.
 
 | < Back | Course | Next > |
 |-|-|-|
-| [1.3. Local development][1.3.LocalDev] | [1. Introduction][course] | TODO |
+| [1.3. Local development][1.3.LocalDev] | [1. Introduction][course] | [1.5. Scene node][1.5.SceneNode] |
 
 [ru]: README-ru.md
 
 [course]: ../../README.md
 [1.3.LocalDev]: ../1.3.LocalDev/README.md
+[1.5.SceneNode]: ../1.5.SceneNode/README.md
 [index.lua]: index.lua
 
 [video-result]: readme/result.gif

@@ -3,7 +3,7 @@
 
 | < Назад | Курс | Далее > |
 |-|-|-|
-| [1.3. Локальная разработка][1.3.LocalDev] | [1. Введение][course] | TODO |
+| [1.3. Локальная разработка][1.3.LocalDev] | [1. Введение][course] | [1.5. Узел сцены][1.5.SceneNode] |
 
 # 1.4. Мышь
 
@@ -159,12 +159,13 @@ end
 
 | < Назад | Курс | Далее > |
 |-|-|-|
-| [1.3. Локальная разработка][1.3.LocalDev] | [1. Введение][course] | TODO |
+| [1.3. Локальная разработка][1.3.LocalDev] | [1. Введение][course] | [1.5. Узел сцены][1.5.SceneNode] |
 
 [en]: README.md
 
 [course]: ../../README-ru.md
 [1.3.LocalDev]: ../1.3.LocalDev/README-ru.md
+[1.5.SceneNode]: ../1.5.SceneNode/README-ru.md
 [index.lua]: index.lua
 
 [video-result]: readme/result.gif

@@ -175,6 +175,26 @@ You have successfully:
 * set screen color with `main.application.camera.clearColor`
 * found out about web browser cache that may drive you crazy if you forget about it
 
+Lua API summary:
+
+| Namespace | Entity | Class / Instance / Property | Description | Input | Output | Example |
+|-|-|-|-|-|-|-|
+| `main` | `application` | Instance | Is a hub for subsystems, e.g., `camera` | - | - | - |
+| `main` | `application.camera` | Instance | Is a viewport into application's scene | - | - | - |
+| `main` | `application.camera.clearColor` | Property | Clearing color of the camera, effectively the background color of the scene the camera observes | Color in RGB format | Color in RGB format | TODO example |
+
+
+* `main` is a so-called namespace where `application` instance resides
+    * `Lua` does not have a notion of namespaces, however, they are easily simulated by tables
+* `application` is application's instance
+    * hosts subsystems like resources, scene nodes, etc.
+* `camera` is the main camera used by application
+    * is a viewport into a scene
+* `clearColor` is the property of `camera` to set so-called `clearing color`
+    * accepts color in RGB
+* `{0, 1, 0}` is an RGB representation of green color
+    * is represented by `Lua` array
+
 | < Back | Course | Next > |
 |-|-|-|
 | [1.1. Distribute][1.1.Distribute] | [1. Introduction][course] | [1.3. Local development][1.3.LocalDev] |
