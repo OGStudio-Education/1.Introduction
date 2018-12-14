@@ -22,7 +22,7 @@ This is an introductory course to game development with `ogstudio`.
 
 # API
 
-Here's API you use in the lessons:
+Lessons use the following API:
 
 * `main` namespace hosts `application` instance
 * `main.application` instance hosts subsystems like `camera`

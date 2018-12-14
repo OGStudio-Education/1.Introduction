@@ -24,7 +24,7 @@
 
 # API
 
-Вы использовали в уроках следующий API:
+Уроки используют следующий API:
 
 // FEATURE main/API
 // FEATURE main.application/API
