@@ -181,7 +181,7 @@ Lua API summary:
 |-|-|-|-|-|-|-|
 | `main` | `application` | Instance | Is a hub for subsystems, e.g., `camera` | - | - | - |
 | `main` | `application.camera` | Instance | Is a viewport into application's scene | - | - | - |
-| `main` | `application.camera.clearColor` | Property | Clearing color of the camera, effectively the background color of the scene the camera observes | Color in RGB format | Color in RGB format | TODO example |
+| `main` | `application.camera.clearColor` | Property | Clearing color of the camera, effectively the background color | Color in RGB format | Color in RGB format | `main.application.camera.clearColor = {1, 0, 0} -- Set red background color`<br>`local color = main.application.camera.clearColor -- Get background color` |
 
 
 * `main` is a so-called namespace where `application` instance resides
