@@ -20,6 +20,24 @@ This is an introductory course to game development with `ogstudio`.
 | [1.3. Local development][1.3.LocalDev] | Change screen color locally, without `GitHub Pages` | 10 minutes |
 | [1.4. Mouse][1.4.Mouse] | Toggle screen color on mouse clicks (finger taps) | 10 minutes |
 
+# API
+
+Here's API you use in the lessons:
+
+* `main` namespace hosts `application` instance
+* `main.application` instance hosts subsystems like `camera`
+* `main.application.camera` instance is a viewport into application's scene
+* `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
+    * **accepts** array of color components in RGB format
+        ```lua
+        main.application.camera.clearColor = {1, 0, 0}
+        ```
+    * **returns** array of color components in RGB format
+        ```lua
+        local color = main.application.camera.clearColor
+        print("background color:", color[1], color[2], color[3])
+        ```
+
 [ru]: README-ru.md
 
 [education]: http://opengamestudio.org/pages/education.html

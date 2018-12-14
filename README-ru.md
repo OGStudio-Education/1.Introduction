@@ -22,6 +22,24 @@
 | [1.3. Локальная разработка][1.3.LocalDev] | Измените цвет экрана локально, без `GitHub Pages` | 10 минут |
 | [1.4. Мышь][1.4.Mouse] | Переключайте цвет экрана на нажатия мыши (пальца) | 10 минут |
 
+# API
+
+Вы использовали в уроках следующий API:
+
+* `main` (пространство имён) содержит экземпляр приложения `application`
+* `main.application` (экземпляр) содержит подсистемы вроде `camera`
+* `main.application.camera` (экземпляр) является "окном" в сцену приложения
+* `main.application.camera.clearColor` (свойство) является очищающим цветом (фактически цветом фона) камеры
+    * **принимает** массив компонент цвета в формате RGB
+        ```lua
+        main.application.camera.clearColor = {1, 0, 0}
+        ```
+    * **возвращает** массив компонент цвета в формате RGB
+        ```lua
+        local color = main.application.camera.clearColor
+        print("background color:", color[1], color[2], color[3])
+        ```
+
 [en]: README.md
 
 [education]: http://opengamestudio.org/pages/education.html
