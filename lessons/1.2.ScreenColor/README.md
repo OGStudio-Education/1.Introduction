@@ -177,21 +177,20 @@ You have successfully:
 
 Lua API summary:
 
-* **Namespace**: `main`
-    * **Instance**: `application`
-        * is a hub for subsystems, e.g., `camera`
-    * **Instance**: `application.camera`
-        * is a viewport into application's scene
-        * **Property**: `application.camera.clearColor`
-            * is clearing color of the camera, effectively the background color
-            * **accepts** color in RGB format
-                ```lua
-                main.application.camera.clearColor = {1, 0, 0}
-                ```
-            * **returns** color in RGB format
-                ```lua
-                local color = main.application.camera.clearColor
-                ```
+* **Instance**: `main.application`
+    * is a hub for subsystems, e.g., `camera`
+* **Instance**: `main.application.camera`
+    * is a viewport into application's scene
+* **Property**: `main.application.camera.clearColor`
+    * is clearing color of the camera, effectively the background color
+    * **accepts** color in RGB format
+        ```lua
+        main.application.camera.clearColor = {1, 0, 0}
+        ```
+    * **returns** color in RGB format
+        ```lua
+        local color = main.application.camera.clearColor
+        ```
             
 
 
