@@ -1,0 +1,35 @@
+#!/bin/bash
+# This script generates READMEs by using the same source base with the help of
+# Feature Tool ( https://bitbucket.org/ogstudio/feature-tool )
+
+# Make sure we have at least Bash 3.
+# NOTE Why not Bash 4? Because Apple sucks: https://apple.stackexchange.com/a/197172
+if ((BASH_VERSINFO[0] < 3)); then
+    echo "ERROR You need to have Bash 3+"
+    exit 1
+fi
+
+DIR=`dirname $0`
+DIR_OSGCPE=$DIR/../openscenegraph-cross-platform-examples
+FEATURES_FILENAME=Features.txt
+
+LESSONS="
+1.2.ScreenColor
+"
+
+generateREADME()
+{
+    lesson=$1
+    echo "Generating README for lesson $lesson"
+
+    featuresDir=$DIR/api
+    srcDir=$DIR/lessons/$lesson/src
+    featuresFile=$DIR/lessons/$lesson/$FEATURES_FILENAME
+    echo "feature-tool $featuresFile $srcDir $featuresDir --comment-string=//"
+    #feature-tool $featuresFile $srcDir $featuresDir --comment-string=--
+}
+
+for lesson in $LESSONS; do
+    generateREADME lesson
+done
+
