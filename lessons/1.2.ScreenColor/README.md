@@ -114,18 +114,21 @@ This means the script has been loaded, parsed, and executed successfully.
 
 # Change screen color
 
-Let's see `index.lua` contents in greater detail:
+Let's see **API** `index.lua` used in greater detail:
 
-* `main` is a so-called namespace where `application` instance resides
-    * `Lua` does not have a notion of namespaces, however, they are easily simulated by tables
-* `application` is application's instance
-    * hosts subsystems like resources, scene nodes, etc.
-* `camera` is the main camera used by application
-    * is a viewport into a scene
-* `clearColor` is the property of `camera` to set so-called `clearing color`
-    * accepts color in RGB
-* `{0, 1, 0}` is an RGB representation of green color
-    * is represented by `Lua` array
+* `main` namespace hosts `application` instance
+* `main.application` instance hosts subsystems like `camera`
+* `main.application.camera` instance is a viewport into `application`'s scene
+* `main.application.camera.clearColor` property is a clearing color (effectively background color) of the `camera`
+    * **accepts** array of color components in RGB format
+        ```lua
+        main.application.camera.clearColor = {1, 0, 0}
+        ```
+    * **returns** array of color components in RGB format
+        ```lua
+        local color = main.application.camera.clearColor
+        print("background color:", color[1], color[2], color[3])
+        ```
 
 We are going to cover more `ogstudio` API later. Now let's try to set red
 color instead of the green one:
@@ -175,7 +178,7 @@ You have successfully:
 * set screen color with `main.application.camera.clearColor`
 * found out about web browser cache that may drive you crazy if you forget about it
 
-## Lua API summary
+**API**:
 
 * `main` namespace hosts `application` instance
 * `main.application` instance hosts subsystems like `camera`
