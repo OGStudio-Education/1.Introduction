@@ -81,7 +81,10 @@ To track a click, we need to:
 
 * `main.application.mouse.pressedButtons` is a list of currently pressed mouse buttons (fingers)
     ```lua
-    TODO for loop print
+    for _, button in pairs(main.application.mouse.pressedButtons)
+    do
+        print("Button", button, "is currently pressed")
+    end
     ```
 
 

@@ -79,7 +79,10 @@ Detected a mouse press / release
 
 * `main.application.mouse.pressedButtons` является списком нажатых в текущий момент кнопок мыши (пальцев)
     ```lua
-    TODO for loop print
+    for _, button in pairs(main.application.mouse.pressedButtons)
+    do
+        print("Button", button, "is currently pressed")
+    end
     ```
 
 **2)** Для упрощения реализации будем считать отпускание щелчком.
