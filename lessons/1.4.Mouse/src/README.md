@@ -24,15 +24,14 @@ Estimated completion time: 10 minutes.
 
 # Detect mouse presses and releases
 
-To track mouse presses and releases, we are going to use
-`main.application.mouse`.
+To track mouse, we are going to use `main.application.mouse`:
 
 // FEATURE main.application.mouse/API
 // FEATURE main.application.mouse.pressedButtonsChanged/API
 // FEATURE main.application.mouse.pressedButtonsChanged/APISubscribe
 
-Let's subscribe to button press / release notifications. Update `index.lua` to
-have the following contents:
+Let's subscribe to mouse press / release notifications. Update `index.lua`
+to have the following contents:
 
 ```lua
 main.application.mouse.pressedButtonsChanged:addCallback(
@@ -45,7 +44,7 @@ main.application.mouse.pressedButtonsChanged:addCallback(
 **Notes**:
 
 * `pressedButtonsChanged` is a notification instance we subscribe to
-* `addCallback` is a method of `pressedButtonsChanged` notification instance
+* `addCallback()` is a method of `pressedButtonsChanged` notification instance
 * `pressedButtonsChanged` and `addCallback` are separated by `:` because it's a method call
 * `function() ... end` block represents a callback function (closure) to be executed each time notification is reported
 

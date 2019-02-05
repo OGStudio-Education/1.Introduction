@@ -23,10 +23,11 @@
 
 # Определите нажатия и отпускания мыши
 
-`main.application` содержит экземпляр `mouse` (мышь), который можно
-использовать для получения текущей позиции (`position`) мыши и её списка
-нажатых клавиш (`pressedButtons`). Вы также можете подписаться на уведомления
-об изменении позиции и / или нажатых клавиш.
+Для отслеживания мыши мы будем использовать `main.application.mouse`:
+
+// FEATURE main.application.mouse/API
+// FEATURE main.application.mouse.pressedButtonsChanged/API
+// FEATURE main.application.mouse.pressedButtonsChanged/APISubscribe
 
 Давайте подпишемся на нажатия / отпускания клавиши мыши. Обновите `index.lua`,
 чтобы файл содержал следующее:
@@ -42,9 +43,9 @@ main.application.mouse.pressedButtonsChanged:addCallback(
 **Замечания**:
 
 * `pressedButtonsChanged` является экземпляром-уведомителем, на уведомления которого мы подписываемся
-* `addCallback` является методом экземпляра-уведомителя `pressedButtonsChanged`
+* `addCallback()` является методом экземпляра-уведомителя `pressedButtonsChanged`
 * `pressedButtonsChanged` и `addCallback` разделены `:`, т.к. это вызов метода
-* блок `function() ... end` является функцией обратного вызова, замыканием (callback function, closure), выполняемым при каждом получении уведомления
+* блок `function() ... end` является функцией обратного вызова (замыканием), выполняемым при каждом получении уведомления
 
 В консоли отладки вы должны увидеть следующий результат:
 

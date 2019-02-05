@@ -20,15 +20,13 @@ FEATURE README.md/APISubscribeOnce
         ```
 
 FEATURE README-ru.md/API
-* `main.application.camera.clearColor` (свойство) является очищающим цветом (фактически цветом фона) камеры
-    * **принимает** массив компонент цвета в формате RGB
+* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой клавиши мыши (пальца)
+FEATURE README-ru.md/APISubscribe
+    * **для подписки** на все уведомления используйте метод `addCallback()` у `core.Reporter`:
         ```lua
-        main.application.camera.clearColor = {1, 0, 0}
+        main.application.mouse.pressedButtonsChanged:addCallback(
+            function()
+                print("A mouse (finger) has been pressed or released")
+            end
+        )
         ```
-    * **возвращает** массив компонент цвета в формате RGB
-        ```lua
-        local color = main.application.camera.clearColor
-        print("background color:", color[1], color[2], color[3])
-        ```
-
-
