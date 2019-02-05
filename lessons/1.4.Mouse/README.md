@@ -38,6 +38,7 @@ To track mouse presses and releases, we are going to use
         )
         ```
         **Notes**:
+
             * `pressedButtonsChanged` and `addCallback` are separated by `:` because it's a method call
             * `function() ... end` block represents a callback function (closure) to be executed upon receiving notification
 

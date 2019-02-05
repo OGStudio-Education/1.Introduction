@@ -10,6 +10,7 @@ FEATURE README.md/APISubscribe
         )
         ```
         **Notes**:
+
             * `pressedButtonsChanged` and `addCallback` are separated by `:` because it's a method call
             * `function() ... end` block represents a callback function (closure) to be executed upon receiving notification
 FEATURE README.md/APISubscribeOnce
