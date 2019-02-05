@@ -26,7 +26,7 @@
 Для отслеживания мыши мы будем использовать `main.application.mouse`:
 
 * `main.application.mouse` (экземпляр) позволяет получить текущие свойства мыши (пальца) вроде позиции, списка нажатых клавиш и подписаться на изменения этих свойств
-* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой клавиши мыши (пальца)
+* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой кнопки мыши (пальца)
     * **для подписки** на все уведомления используйте метод `addCallback()` у `core.Reporter`:
         ```lua
         main.application.mouse.pressedButtonsChanged:addCallback(
@@ -188,7 +188,7 @@ end
         print("Button", button, "is currently pressed")
     end
     ```
-* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой клавиши мыши (пальца)
+* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой кнопки мыши (пальца)
     * **для подписки** на все уведомления используйте метод `addCallback()` у `core.Reporter`:
         ```lua
         main.application.mouse.pressedButtonsChanged:addCallback(

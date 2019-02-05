@@ -11,7 +11,7 @@ FEATURE README.md/Subscribe
         ```
 
 FEATURE README-ru.md/API
-* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой клавиши мыши (пальца)
+* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой кнопки мыши (пальца)
 FEATURE README-ru.md/Subscribe
     * **для подписки** на все уведомления используйте метод `addCallback()` у `core.Reporter`:
         ```lua
