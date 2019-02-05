@@ -28,7 +28,7 @@ To track mouse, we are going to use `main.application.mouse`:
 
 // FEATURE main.application.mouse/API
 // FEATURE main.application.mouse.pressedButtonsChanged/API
-// FEATURE main.application.mouse.pressedButtonsChanged/APISubscribe
+// FEATURE main.application.mouse.pressedButtonsChanged/Subscribe
 
 Let's subscribe to mouse press / release notifications. Update `index.lua`
 to have the following contents:
@@ -59,11 +59,21 @@ Detected a mouse press / release
 
 # Detect mouse clicks
 
-You should have noticed that each mouse click (finger tap) results in two lines
-printed in the debug console. That's because both presses and releases are reported.
+As you see, each mouse click or finger tap results in two lines
+printed in the debug console. That's because both presses and releases
+are reported.
 
-A click is a press followed by a release. To simplify implementation, we can
-treat a release as a click.
+To track a click, we need to:
+
+0. tell presses from releases
+0. make sure a press is followed by a release
+
+1) To tell a press from a release, we should consult
+`main.application.mouse.pressedButtons`:
+
+// FEATURE main.application.mouse.pressedButtons/API
+
+2) To simplify implementation, we can treat a release as a click.
 
 Update the callback function to look like this:
 
@@ -80,7 +90,7 @@ end
 **Notes**:
 
 * `#` returns the number of items of an array
-* for simplicity we make sure that all buttons are released, i.e., there are no `pressedButtons`
+* for simplicity we only check if all buttons are released, i.e., there are no `pressedButtons`
 
 Now each click should result in a single line printed in the debug console.
 
