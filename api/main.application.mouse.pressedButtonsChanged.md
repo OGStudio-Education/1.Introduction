@@ -9,10 +9,6 @@ FEATURE README.md/APISubscribe
             end
         )
         ```
-        **Notes**:
-
-            * `pressedButtonsChanged` and `addCallback` are separated by `:` because it's a method call
-            * `function() ... end` block represents a callback function (closure) to be executed upon receiving notification
 FEATURE README.md/APISubscribeOnce
     * **to subscribe only once** to the next notification of mouse buttons (fingers), use `core.Reporter`'s `addOneTimeCallback()` method:
         ```lua

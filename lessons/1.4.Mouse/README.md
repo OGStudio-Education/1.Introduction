@@ -27,7 +27,7 @@ Estimated completion time: 10 minutes.
 To track mouse presses and releases, we are going to use
 `main.application.mouse`.
 
-* `main.application.mouse` instance lets you get current mouse (finger) properties like position and react to their changes
+* `main.application.mouse` instance lets you get current mouse (finger) properties like position, pressed mouse buttons and subscribe to changes of the properties
 * `main.application.mouse.pressedButtonsChanged` is a notification instance (`core.Reporter`) that reports notifications when any mouse button (finger) is pressed or released
     * **to subscribe** to all notifications, use `core.Reporter`'s `addCallback()` method:
         ```lua
@@ -37,15 +37,6 @@ To track mouse presses and releases, we are going to use
             end
         )
         ```
-        **Notes**:
-
-            * `pressedButtonsChanged` and `addCallback` are separated by `:` because it's a method call
-            * `function() ... end` block represents a callback function (closure) to be executed upon receiving notification
-
-
-`main.application` hosts `mouse` instance, which can be used to get current
-mouse `position` and a list of `pressedButtons`. You can also subscribe to
-be notified when `position` and / or `pressedButtons` change.
 
 Let's subscribe to button press / release notifications. Update `index.lua` to
 have the following contents:

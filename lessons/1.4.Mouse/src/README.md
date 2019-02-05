@@ -31,11 +31,6 @@ To track mouse presses and releases, we are going to use
 // FEATURE main.application.mouse.pressedButtonsChanged/API
 // FEATURE main.application.mouse.pressedButtonsChanged/APISubscribe
 
-
-`main.application` hosts `mouse` instance, which can be used to get current
-mouse `position` and a list of `pressedButtons`. You can also subscribe to
-be notified when `position` and / or `pressedButtons` change.
-
 Let's subscribe to button press / release notifications. Update `index.lua` to
 have the following contents:
 
