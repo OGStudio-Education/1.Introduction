@@ -1,2 +1,3 @@
 main.application.mouse
+main.application.mouse.pressedButtons
 main.application.mouse.pressedButtonsChanged

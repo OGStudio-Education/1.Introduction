@@ -77,6 +77,10 @@ Detected a mouse press / release
 **1)** Для отличия нажатия от отпускания, используем
 `main.application.mouse.pressedButtons`:
 
+* `main.application.mouse.pressedButtons` является списком нажатых в текущий момент кнопок мыши (пальцев)
+    ```lua
+    TODO for loop print
+    ```
 
 **2)** Для упрощения реализации мы будем считать отпускание щелчком.
 

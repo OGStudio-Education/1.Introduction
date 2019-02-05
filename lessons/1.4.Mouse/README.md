@@ -79,6 +79,11 @@ To track a click, we need to:
 **1)** To tell a press from a release, we should consult
 `main.application.mouse.pressedButtons`:
 
+* `main.application.mouse.pressedButtons` is a list of currently pressed mouse buttons (fingers)
+    ```lua
+    TODO for loop print
+    ```
+
 
 **2)** To simplify implementation, we can treat a release as a click.
 
