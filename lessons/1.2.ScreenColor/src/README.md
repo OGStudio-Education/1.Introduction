@@ -168,7 +168,7 @@ You have successfully:
 * set screen color with `main.application.camera.clearColor`
 * found out about web browser cache that may drive you crazy if you forget about it
 
-Here's API you used:
+Here's new `ogstudio` API you used:
 
 // FEATURE main/API
 // FEATURE main.application/API

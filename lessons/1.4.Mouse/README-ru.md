@@ -178,7 +178,28 @@ end
 * реализовали `colorToggler` для переключения между красным и зелёным
 * использовали `colorToggler` вместе с `main.application.mouse.pressedButtonsChanged` и `main.application.camera.clearColor` для переключения цвета экрана
 
-Проверьте окончательную версию [index.lua][index.lua], которую вы должны были создать.
+Вы впервые использовали следующие вызовы API `ogstudio`:
+
+* `main.application.mouse` (экземпляр) позволяет получить текущие свойства мыши (пальца) вроде позиции, списка нажатых клавиш и подписаться на изменения этих свойств
+* `main.application.mouse.pressedButtons` является списком нажатых в текущий момент кнопок мыши (пальцев)
+    ```lua
+    for _, button in pairs(main.application.mouse.pressedButtons)
+    do
+        print("Button", button, "is currently pressed")
+    end
+    ```
+* `main.application.mouse.pressedButtonsChanged` является экземпляром-уведомителем (`core.Reporter`), который уведомляет при нажатии и отпускании любой клавиши мыши (пальца)
+    * **для подписки** на все уведомления используйте метод `addCallback()` у `core.Reporter`:
+        ```lua
+        main.application.mouse.pressedButtonsChanged:addCallback(
+            function()
+                print("A mouse button or finger has been pressed or released")
+            end
+        )
+        ```
+
+Проверьте окончательную версию [index.lua][index.lua], которая должна теперь
+быть у вас.
 
 | < Назад | Курс | Далее > |
 |-|-|-|

@@ -138,10 +138,6 @@ that's why we needed `hard reset` in the previous tutorial.
 You have successfully changed screen color locally and instantly saw result
 without web browser cache wizardry.
 
-Here's API you used:
-
-// FEATURE main.application.camera.clearColor/API
-
 | < Back | Course | Next > |
 |-|-|-|
 | [1.2. Screen color][1.2.ScreenColor] | [1. Introduction][course] | [1.4. Mouse][1.4.Mouse] |

@@ -181,7 +181,29 @@ You have successfully:
 * implemented `colorToggler` to toggle between red and green
 * used `colorToggler` together with `main.application.mouse.pressedButtonsChanged` and `main.application.camera.clearColor` to toggle the screen color
 
-Here's final [index.lua][index.lua] you should have created.
+Here's new `ogstudio` API you used:
+
+* `main.application.mouse` instance lets you get current mouse (finger) properties like position, pressed mouse buttons and subscribe to changes of the properties
+* `main.application.mouse.pressedButtons` is a list of currently pressed mouse buttons (fingers)
+    ```lua
+    for _, button in pairs(main.application.mouse.pressedButtons)
+    do
+        print("Button", button, "is currently pressed")
+    end
+    ```
+
+* `main.application.mouse.pressedButtonsChanged` is a notification instance (`core.Reporter`) that reports notifications when any mouse button (finger) is pressed or released
+    * **to subscribe** to all notifications, use `core.Reporter`'s `addCallback()` method:
+        ```lua
+        main.application.mouse.pressedButtonsChanged:addCallback(
+            function()
+                print("A mouse button or finger has been pressed or released")
+            end
+        )
+        ```
+
+
+Here's final [index.lua][index.lua] you should have now.
 
 | < Back | Course | Next > |
 |-|-|-|

@@ -170,7 +170,7 @@ main::Example(...) Successfully executed script
 * установили цвет экрана с помощью `main.application.camera.clearColor`
 * увидели кэш веб-браузера в действии, который может свести вас с ума, если вы забудете про него
 
-Вы использовали следующий API:
+Вы впервые использовали следующие вызовы API `ogstudio`:
 
 // FEATURE main/API
 // FEATURE main.application/API

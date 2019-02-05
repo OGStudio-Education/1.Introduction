@@ -166,7 +166,14 @@ You have successfully:
 * implemented `colorToggler` to toggle between red and green
 * used `colorToggler` together with `main.application.mouse.pressedButtonsChanged` and `main.application.camera.clearColor` to toggle the screen color
 
-Here's final [index.lua][index.lua] you should have created.
+Here's new `ogstudio` API you used:
+
+// FEATURE main.application.mouse/API
+// FEATURE main.application.mouse.pressedButtons/API
+// FEATURE main.application.mouse.pressedButtonsChanged/API
+// FEATURE main.application.mouse.pressedButtonsChanged/Subscribe
+
+Here's final [index.lua][index.lua] you should have now.
 
 | < Back | Course | Next > |
 |-|-|-|

@@ -165,7 +165,15 @@ end
 * реализовали `colorToggler` для переключения между красным и зелёным
 * использовали `colorToggler` вместе с `main.application.mouse.pressedButtonsChanged` и `main.application.camera.clearColor` для переключения цвета экрана
 
-Проверьте окончательную версию [index.lua][index.lua], которую вы должны были создать.
+Вы впервые использовали следующие вызовы API `ogstudio`:
+
+// FEATURE main.application.mouse/API
+// FEATURE main.application.mouse.pressedButtons/API
+// FEATURE main.application.mouse.pressedButtonsChanged/API
+// FEATURE main.application.mouse.pressedButtonsChanged/Subscribe
+
+Проверьте окончательную версию [index.lua][index.lua], которая должна теперь
+быть у вас.
 
 | < Назад | Курс | Далее > |
 |-|-|-|

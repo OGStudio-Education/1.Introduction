@@ -138,19 +138,6 @@ that's why we needed `hard reset` in the previous tutorial.
 You have successfully changed screen color locally and instantly saw result
 without web browser cache wizardry.
 
-Here's API you used:
-
-* `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
-    * **accepts** array of color components in RGB format
-        ```lua
-        main.application.camera.clearColor = {1, 0, 0}
-        ```
-    * **returns** array of color components in RGB format
-        ```lua
-        local color = main.application.camera.clearColor
-        print("background color:", color[1], color[2], color[3])
-        ```
-
 | < Back | Course | Next > |
 |-|-|-|
 | [1.2. Screen color][1.2.ScreenColor] | [1. Introduction][course] | [1.4. Mouse][1.4.Mouse] |
