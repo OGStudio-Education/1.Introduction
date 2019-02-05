@@ -31,7 +31,7 @@
         ```lua
         main.application.mouse.pressedButtonsChanged:addCallback(
             function()
-                print("A mouse (finger) has been pressed or released")
+                print("A mouse button or finger has been pressed or released")
             end
         )
         ```

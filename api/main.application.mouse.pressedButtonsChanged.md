@@ -5,7 +5,7 @@ FEATURE README.md/APISubscribe
         ```lua
         main.application.mouse.pressedButtonsChanged:addCallback(
             function()
-                print("A mouse (finger) has been pressed or released")
+                print("A mouse button or finger has been pressed or released")
             end
         )
         ```
@@ -14,7 +14,7 @@ FEATURE README.md/APISubscribeOnce
         ```lua
         main.application.mouse.pressedButtonsChanged:addOneTimeCallback(
             function()
-                print("A mouse (finger) has been pressed or released only once")
+                print("A mouse button or finger has been pressed or released only once")
             end
         )
         ```
@@ -26,7 +26,7 @@ FEATURE README-ru.md/APISubscribe
         ```lua
         main.application.mouse.pressedButtonsChanged:addCallback(
             function()
-                print("A mouse (finger) has been pressed or released")
+                print("A mouse button or finger has been pressed or released")
             end
         )
         ```
