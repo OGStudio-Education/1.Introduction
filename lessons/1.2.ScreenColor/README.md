@@ -117,7 +117,7 @@ This means the script has been loaded, parsed, and executed successfully.
 Let's see into API you used in `index.lua`:
 
 * `main` namespace hosts `application` instance
-* `main.application` instance hosts subsystems like `camera`
+* `main.application` instance hosts subsystems like `camera`, `mouse`, etc.
 * `main.application.camera` instance is a viewport into application's scene
 * `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
     * **accepts** array of color components in RGB format
@@ -180,7 +180,7 @@ You have successfully:
 Here's API you used:
 
 * `main` namespace hosts `application` instance
-* `main.application` instance hosts subsystems like `camera`
+* `main.application` instance hosts subsystems like `camera`, `mouse`, etc.
 * `main.application.camera` instance is a viewport into application's scene
 * `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
     * **accepts** array of color components in RGB format

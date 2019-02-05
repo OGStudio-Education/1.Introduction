@@ -119,7 +119,7 @@ main::Example(...) Successfully executed script
 Давайте взглянем на API, использованный в `index.lua`:
 
 * `main` (пространство имён) содержит экземпляр приложения `application`
-* `main.application` (экземпляр) содержит подсистемы вроде `camera`
+* `main.application` (экземпляр) содержит подсистемы вроде `camera` (камера), `mouse` (мышь) и т.д.
 * `main.application.camera` (экземпляр) является "окном" в сцену приложения
 * `main.application.camera.clearColor` (свойство) является очищающим цветом (фактически цветом фона) камеры
     * **принимает** массив компонент цвета в формате RGB
@@ -182,7 +182,7 @@ main::Example(...) Successfully executed script
 Вы использовали следующий API:
 
 * `main` (пространство имён) содержит экземпляр приложения `application`
-* `main.application` (экземпляр) содержит подсистемы вроде `camera`
+* `main.application` (экземпляр) содержит подсистемы вроде `camera` (камера), `mouse` (мышь) и т.д.
 * `main.application.camera` (экземпляр) является "окном" в сцену приложения
 * `main.application.camera.clearColor` (свойство) является очищающим цветом (фактически цветом фона) камеры
     * **принимает** массив компонент цвета в формате RGB

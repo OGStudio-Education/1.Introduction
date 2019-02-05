@@ -25,7 +25,7 @@ This is an introductory course to game development with `ogstudio`.
 Lessons use the following API:
 
 * `main` namespace hosts `application` instance
-* `main.application` instance hosts subsystems like `camera`
+* `main.application` instance hosts subsystems like `camera`, `mouse`, etc.
 * `main.application.camera` instance is a viewport into application's scene
 * `main.application.camera.clearColor` property is a clearing color (effectively background color) of the camera
     * **accepts** array of color components in RGB format
