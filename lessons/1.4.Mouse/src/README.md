@@ -68,12 +68,12 @@ To track a click, we need to:
 1. tell presses from releases
 1. make sure a press is followed by a release
 
-1) To tell a press from a release, we should consult
+**1)** To tell a press from a release, we should consult
 `main.application.mouse.pressedButtons`:
 
 // FEATURE main.application.mouse.pressedButtons/API
 
-2) To simplify implementation, we can treat a release as a click.
+**2)** To simplify implementation, we can treat a release as a click.
 
 Update the callback function to look like this:
 
