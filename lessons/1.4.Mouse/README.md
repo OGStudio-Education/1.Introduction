@@ -73,8 +73,8 @@ are reported.
 
 To track a click, we need to:
 
-0. tell presses from releases
-0. make sure a press is followed by a release
+1. tell presses from releases
+1. make sure a press is followed by a release
 
 1) To tell a press from a release, we should consult
 `main.application.mouse.pressedButtons`:
